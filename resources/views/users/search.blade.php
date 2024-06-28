@@ -36,16 +36,16 @@
               <td class="text-center">
                 <span class="d-inline-block">
                 @if (Auth::user()->id !== $user->id)
-                   <button  class="btn btn-primary btn-sm px-3 m-1" data-bs-toggle="modal" data-bs-target="#detail-user-{{ $user->id }}">
+                   <button  class="btn btn-primary btn-sm px-3 " data-bs-toggle="modal" data-bs-target="#detail-user-{{ $user->id }}">
                         Details
                    </button>
                    @include('users.modal.detail')
                 @else
-                <a href="{{ route('edit',$user->id) }}" class="btn btn-secondary btn-sm m-1"><i class="fa-solid fa-pen"></i></a>
-                <form action="{{ route('destroy',$user->id) }}" method="post">
+                <a href="{{ route('edit',$user->id) }}" class="btn btn-secondary btn-sm "><i class="fa-solid fa-pen"></i></a>
+                <form action="{{ route('destroy',$user->id) }}" method="post" class="d-inline">
                   @csrf
                   @method('DELETE')
-                    <button type="submit" class="btn btn-danger btn-sm m-1"><i class="fa-solid fa-trash-can"></i></button>
+                    <button type="submit" class="btn btn-danger btn-sm "><i class="fa-solid fa-trash-can"></i></button>
                     <!-- <a href="{{ route('destroy',$user->id) }}" class="btn btn-danger btn-sm m-1"><i class="fa-solid fa-trash-can"></i></a> -->
                     
                   
@@ -54,7 +54,7 @@
                   @endif      
               
                 
-              </span>  
+               </span>  
               </td>
              
             </tr>
