@@ -1,0 +1,25 @@
+.search {
+  width: 300px;
+}
+
+.icon-md{
+  font-size: 3.5rem;
+  
+}
+
+.avatar-md{
+  width: 3.5rem;
+  height: 3.5rem;
+  object-fit: cover;
+}
+
+
+.icon-lg {
+  font-size: 9rem;
+}
+
+.avatar-lg{
+  width: 9rem;
+  height: 9rem;
+  object-fit: cover;
+}
